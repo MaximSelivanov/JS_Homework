@@ -1,0 +1,26 @@
+table {
+    border: 1px solid black;
+    width: 800px;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+
+tr {
+    border: 1px solid black;
+    height: 60px;
+    text-align: center;
+    
+}
+td {
+    width: 33.3%;
+    border: 1px solid black;
+}
+.table-button {
+    border: 1px solid black;
+    height: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    cursor: pointer; 
+}
+
