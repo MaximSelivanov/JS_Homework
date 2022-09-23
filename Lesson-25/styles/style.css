@@ -1,0 +1,58 @@
+/*Задание 4: Сверстать автоматический равномерно зацикленный слайдер, используя только CSS3 анимации.*/
+
+
+
+.slider-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+
+.slider-container {
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-areas: "1 slide"; 
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.slider-one {
+    grid-area: slide;
+    margin-top: 10px;
+    animation: slidering 20s infinite 15s;
+    animation-timing-function: cubic-bezier(1, 0, .35, 1);
+}
+
+.slider-two {
+    grid-area: slide;
+    margin-top: 10px;
+    animation: slidering 20s infinite 10s;
+    animation-timing-function: cubic-bezier(1, 0, .35, 1);
+    opacity: 0;
+}
+
+.slider-three {
+    grid-area: slide;
+    margin-top: 10px;
+    animation: slidering 20s infinite 5s;
+    animation-timing-function: cubic-bezier(1, 0, .35, 1);
+    opacity: 0;
+}
+
+.slider-four {
+    grid-area: slide;
+    margin-top: 10px;
+    animation: slidering 20s infinite;
+    animation-timing-function: cubic-bezier(1, 0, .35, 1);
+   
+}
+
+@keyframes slidering {
+      0% {opacity:0;}
+	  5% {opacity:1;}
+	 25% {opacity:1;}
+	 30% {opacity:0;}
+	100% {opacity:0;}
+}
